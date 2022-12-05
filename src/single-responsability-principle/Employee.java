@@ -1,9 +1,5 @@
 package SOLID.src.srp;
 
-import java.sql.Statement;
-import java.sql.DriverManager;
-import java.sql.Connection;
-
 public class Employee {
     private String employeeId;
     private String employeeName;
@@ -12,27 +8,11 @@ public class Employee {
     private String employeeType;
 
     public void save() {
-        String objectStr = MyUtils.serializeIntoAsString(this);
-        Connection connection = null;
-        Statement stmt = null;
-
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            stmt = connection.createStatement();
-            stmt.execute("INSERT INTO EMPLOYEES VALUES (" + objectStr + ")");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        new EmployeeRepository().save(this);
     }
 
     public void calculateTax() {
-        if (this.getEmployeeType().equals("fulltime")) {
-
-        }
-
-        if (this.getEmployeeType().equals("contract")) {
-
-        }
+        new TaxCalculator().calculateTax(this);
     }
 
     public String getEmployeeId() {
