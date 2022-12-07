@@ -1,4 +1,5 @@
-package SOLID.src.srp;
+import SOLID.src.srp.EmployeeRepository;
+import SOLID.src.srp.TaxCalculator;
 
 public class Employee {
     private String employeeId;
