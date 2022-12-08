@@ -1,4 +1,4 @@
-package SOLID.src.srp;
+package main.java.com.github.solid.sro;
 
 public class TaxCalculator {
     public void calculateTax(Employee employee) {

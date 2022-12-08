@@ -1,3 +1,4 @@
+package main.java.com.github.solid.ocp;
 
 public class HealthInsuranceCustomerProfile implements CustomerProfile {
 

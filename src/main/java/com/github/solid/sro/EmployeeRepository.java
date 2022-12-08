@@ -1,4 +1,4 @@
-package SOLID.src.srp;
+package main.java.com.github.solid.sro;
 
 import java.sql.Connection;
 import java.sql.Statement;
