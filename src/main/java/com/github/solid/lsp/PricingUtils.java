@@ -16,9 +16,7 @@ public class PricingUtils {
         productList.add(p3);
 
         for (Product product : productList) {
-            if (product instanceof InHouseProduct) {
-                ((InHouseProduct) product).applyExtraDiscount();
-            }
+            System.out.println(product.getDiscount());
         }
     }
 }
