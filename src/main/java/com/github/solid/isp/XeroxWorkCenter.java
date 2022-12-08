@@ -1,6 +1,6 @@
 package main.java.com.github.solid.isp;
 
-public class XeroxWorkCenter implements IMultiFunction {
+public class XeroxWorkCenter implements IPrint, IScan, IFax {
 
     @Override
     public void print() {

@@ -1,6 +1,6 @@
 package main.java.com.github.solid.isp;
 
-public class CannonPrinter implements IMultiFunction {
+public class CannonPrinter implements IPrint {
 
     @Override
     public void print() {
@@ -12,22 +12,6 @@ public class CannonPrinter implements IMultiFunction {
     public void getPrintSpoolDetails() {
         // TODO Auto-generated method stub
 
-    }
-
-    @Override
-    public void scan() {
-    }
-
-    @Override
-    public void scanPhoto() {
-    }
-
-    @Override
-    public void fax() {
-    }
-
-    @Override
-    public void internetFax() {
     }
 
 }

@@ -1,6 +1,6 @@
 package main.java.com.github.solid.isp;
 
-public class HPPrinterNScanner implements IMultiFunction {
+public class HPPrinterNScanner implements IPrint, IScan {
 
     @Override
     public void print() {
@@ -24,14 +24,6 @@ public class HPPrinterNScanner implements IMultiFunction {
     public void scanPhoto() {
         // TODO Auto-generated method stub
 
-    }
-
-    @Override
-    public void fax() {
-    }
-
-    @Override
-    public void internetFax() {
     }
 
 }
