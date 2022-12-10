@@ -4,7 +4,7 @@ public class ProductCatalog {
 
     public void listAllProducts() {
 
-        SQLProductRepository sqlProductRepository = new SQLProductRepository();
-        sqlProductRepository.getAllProductNames();
+        ProductRepository productRepository = ProductFactory.create();
+        productRepository.getAllProductNames();
     }
 }
